@@ -1,10 +1,5 @@
-import {
-  faGithub,
-  faInstagram,
-  faLinkedin,
-  faNpm,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { CMSLink } from 'edit-me/types/CMSLink';
 
 export const links: CMSLink[] = [
@@ -14,23 +9,18 @@ export const links: CMSLink[] = [
     title: 'GitHub',
   },
   {
-    href: 'https://www.instagram.com',
-    icon: faInstagram,
-    title: 'Instagram',
-  },
-  {
     href: 'https://www.linkedin.com',
     icon: faLinkedin,
     title: 'LinkedIn',
   },
   {
-    href: 'https://www.npmjs.com',
-    icon: faNpm,
-    title: 'NPM',
+    href: '',
+    icon: faFilePdf,
+    title: 'Resume',
   },
   {
-    href: 'https://twitter.com',
-    icon: faTwitter,
-    title: 'Twitter',
+    href: 'mailto:tmaguire2002@yahoo.com.au',
+    icon: faEnvelope,
+    title: 'Email',
   },
 ];

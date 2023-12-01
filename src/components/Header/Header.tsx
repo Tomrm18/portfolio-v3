@@ -3,6 +3,9 @@ import React from 'react';
 import { fullName } from '../../helpers/utils';
 import { Heading } from '../Heading/Heading';
 import PDFDownloadButton from '../PDF/PDFDownloadButton';
+import { links } from 'edit-me/config/links';
+import ButtonLink from '../Button/ButtonLink';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 interface HeaderProps {
   secret?: string;
@@ -19,7 +22,25 @@ export const Header: React.FC<HeaderProps> = ({ secret }) => {
               {personal.title}
             </Heading>
           </div>
-          <PDFDownloadButton secret={secret} />
+          {/* <PDFDownloadButton secret={secret} /> */}
+          {links && (
+            <div className="flex justify-center">
+              <div className="grid grid-flow-col gap-2">
+                {links.map((link) => (
+                  <ButtonLink
+                    className="h-12 w-12 rounded-full p-0"
+                    href={link.href}
+                    key={link.title}
+                  >
+                    <span className="sr-only">
+                      {personal.givenName} on {link.title}
+                    </span>
+                    <FontAwesomeIcon aria-hidden icon={link.icon} size="lg" />
+                  </ButtonLink>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -15,9 +15,17 @@ export const ContactInformation: React.FC<ContactInformationProps> = ({
       <SectionHeading icon={faIdCard} level={3} text="Contact Information" />
 
       <ul className="mt-2">
-        <li>
-          <strong>Location:</strong> {personal.location}
-        </li>
+        {!personal.location ? null : (
+          <li>
+            <strong>Location: </strong> <span>{personal.location}</span>
+          </li>
+        )}
+        {!personal.email ? null : (
+          <li>
+            <strong>Email: </strong>{' '}
+            <a href={`mailto:${personal.email}`}>{personal.email}</a>
+          </li>
+        )}
 
         {/* private access required */}
         {privateInformation?.map((privateField) => (

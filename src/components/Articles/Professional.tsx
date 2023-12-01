@@ -3,8 +3,14 @@ import React from 'react';
 import { sortedProfessionalExperiences } from 'src/helpers/utils';
 import { SectionHeading } from '../SectionHeading/SectionHeading';
 import ProfessionalItem from './ProfessionalItem';
+import { useGetImages } from 'src/hooks/useGetImage';
 
 const Professional: React.FC = () => {
+  const [getImagePaths] = useGetImages();
+
+  const jobImagePaths = getImagePaths();
+  console.log(jobImagePaths);
+
   return (
     <article className="rounded-xl bg-neutral-3 py-12">
       <div className="container">
