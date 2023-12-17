@@ -19,10 +19,6 @@ const Page: React.FC<PageProps> = () => {
           <ContactInformation />
         </div>
 
-        {/* <div className="mt-12">
-          <Skills />
-        </div> */}
-
         <div className="mt-12">
           <Education />
         </div>
@@ -33,6 +29,10 @@ const Page: React.FC<PageProps> = () => {
 
         <div className="mt-12">
           <Achievements />
+        </div>
+
+        <div className="mt-12">
+          <Skills />
         </div>
 
         {/* <div className="mt-12">
