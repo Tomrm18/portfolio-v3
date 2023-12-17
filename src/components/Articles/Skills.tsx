@@ -4,7 +4,6 @@ import React from 'react';
 import { Heading } from '../Heading/Heading';
 import Prose from '../Prose/Prose';
 import { SectionHeading } from '../SectionHeading/SectionHeading';
-import { StarRating } from '../StarRating/StarRating';
 
 const Skills: React.FC = () => {
   return (

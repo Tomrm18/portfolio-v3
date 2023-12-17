@@ -2,7 +2,6 @@ import { personal } from '@content';
 import React from 'react';
 import { fullName } from '../../helpers/utils';
 import { Heading } from '../Heading/Heading';
-import PDFDownloadButton from '../PDF/PDFDownloadButton';
 import { links } from 'edit-me/config/links';
 import ButtonLink from '../Button/ButtonLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -4,6 +4,9 @@ import { withContentlayer } from 'next-contentlayer';
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default withContentlayer(nextConfig);
