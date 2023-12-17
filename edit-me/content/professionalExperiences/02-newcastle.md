@@ -1,6 +1,7 @@
 ---
 title: IT Client Support Assistant
 organization: The University of Newcastle
+alt: newcastle
 startDate: Jan 2022
 endDate: July 2022
 ---

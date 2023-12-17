@@ -1,6 +1,7 @@
 ---
 title: R&D Digital Engineer Intern
 organization: Schenck Process
+alt: schenck
 startDate: July 2022
 endDate: Dec 2022
 ---

@@ -65,6 +65,12 @@ export const ProfessionalExperience = defineDocumentType(() => ({
       description: 'The name of the company or organization you worked with',
       required: true,
     },
+    alt: {
+      type: 'string',
+      description:
+        'The alternative or short name for the company or organization',
+      required: true,
+    },
     startDate: {
       type: 'string',
       description: 'A descriptor of when you started the position',

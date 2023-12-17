@@ -1,16 +1,7 @@
-const fs = require('fs');
-
 export const useGetImages = () => {
-  const getImagePaths = (): string[] => {
-    const imgNames: string[] = [];
-    const imgPath = `./public/images/`;
-
-    fs.readdirSync(imgPath).forEach((file: any) => {
-      imgNames.push(`${imgPath}${file}`);
-    });
-
-    return imgNames;
+  const getImagePath = (company: string): string => {
+    return `/images/${company}.png`;
   };
 
-  return [getImagePaths];
+  return [getImagePath];
 };
