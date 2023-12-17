@@ -4,17 +4,17 @@ import { CMSLink } from 'edit-me/types/CMSLink';
 
 export const links: CMSLink[] = [
   {
-    href: 'https://github.com',
+    href: 'https://github.com/Tomrm18',
     icon: faGithub,
     title: 'GitHub',
   },
   {
-    href: 'https://www.linkedin.com',
+    href: 'https://www.linkedin.com/in/thomas-maguire018/',
     icon: faLinkedin,
     title: 'LinkedIn',
   },
   {
-    href: '',
+    href: 'pdf/resume.pdf',
     icon: faFilePdf,
     title: 'Resume',
   },

@@ -22,7 +22,7 @@ export const Header: React.FC<HeaderProps> = ({ secret }) => {
               {personal.title}
             </Heading>
           </div>
-          {/* <PDFDownloadButton secret={secret} /> */}
+
           {links && (
             <div className="flex justify-center">
               <div className="grid grid-flow-col gap-2">
