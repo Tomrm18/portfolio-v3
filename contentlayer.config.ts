@@ -51,6 +51,40 @@ export const Skill = defineDocumentType(() => ({
   },
 }));
 
+export const Education = defineDocumentType(() => ({
+  name: 'Education',
+  filePathPattern: 'education/*.md',
+  fields: {
+    title: {
+      type: 'string',
+      description: 'Your most recent title at this organization',
+      required: true,
+    },
+    organization: {
+      type: 'string',
+      description: 'The name of the company or organization you worked with',
+      required: true,
+    },
+    alt: {
+      type: 'string',
+      description:
+        'The alternative or short name for the company or organization',
+      required: true,
+    },
+    startDate: {
+      type: 'string',
+      description: 'A descriptor of when you started the position',
+      required: true,
+    },
+    endDate: {
+      type: 'string',
+      description:
+        'If you no longer work with this organization, provide a descriptor of when you ended the position',
+      required: false,
+    },
+  },
+}));
+
 export const ProfessionalExperience = defineDocumentType(() => ({
   name: 'ProfessionalExperience',
   filePathPattern: 'professionalExperiences/*.md',
@@ -101,10 +135,16 @@ export const Achievement = defineDocumentType(() => ({
         'The name of the school, organization, or program you earned your achievement from',
       required: true,
     },
-    completionYear: {
-      type: 'number',
-      description: 'The year you earned your achievement',
+    startDate: {
+      type: 'string',
+      description: 'A descriptor of when you started the position',
       required: true,
+    },
+    endDate: {
+      type: 'string',
+      description:
+        'If you no longer work with this organization, provide a descriptor of when you ended the position',
+      required: false,
     },
   },
 }));
@@ -139,6 +179,7 @@ export default makeSource({
   documentTypes: [
     Personal,
     Skill,
+    Education,
     ProfessionalExperience,
     Achievement,
     AdditionalInfo,
